@@ -21,7 +21,7 @@ Unnamed arguments in the CLI are positional
 Named arguments in the CLI are kwargs
 
 Examples:
-
+```
 Functions with no parameters
 At the CLI:   system general cluster-name view
 In Python:  my_nas.system_general_cluster__name_view()
@@ -33,5 +33,5 @@ In Python:  my_nas.access_nas__volumes_delete("MyVolume")
 Function with unnamed arguments and named arguments
 At the CLI:   access nas-volumes add MyVolume 300 GB -security_style NTFS
 In Python:  self.access_nas__volumes_add("MyVolume","300","GB",security_style="NTFS")
-
+```
 There are also some basic helper functions provided to return data in some basic data structure, see the module for specifics
