@@ -9,7 +9,7 @@ _Description: This module provides a wrapper for accessing the SSH CLI on Dell F
 ## Usage
 
 1.  _Instantiate your FS8600 device_
-```
+
 from FS8600 import FS8600
 
 my_nas = FS8600("127.0.0.1","myuser","mypass")
