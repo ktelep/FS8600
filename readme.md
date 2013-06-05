@@ -35,4 +35,12 @@ Function with unnamed arguments and named arguments
 At the CLI:   access nas-volumes add MyVolume 300 GB -security_style NTFS
 In Python:  self.access_nas__volumes_add("MyVolume","300","GB",security_style="NTFS")
 ```
-There are also some basic helper functions provided to return data in some basic data structure, see the module for specifics
+
+3. _Other ways to execute commands_
+
+There is also a function for passing a raw command to the NAS:
+```
+In Python:   ny_nas.raw_nas_command("access nas-volumes add MyVolume 300 GB -security_style NTFS")
+```
+
+There are some helper functions also available in the module, I encourage you to look at them.
