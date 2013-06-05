@@ -4,15 +4,16 @@ _Description: This module provides a wrapper for accessing the SSH CLI on Dell F
 
 ## Requirements
 
-1. _paramiko and by proxy, pycrypto_ (This makes this not work very well on Windows....sorry)
+1. _paramiko and by proxy, pycrypto_
 
 ## Usage
 
 1.  _Instantiate your FS8600 device_
-
+```
 from FS8600 import FS8600
 
 my_nas = FS8600("127.0.0.1","myuser","mypass")
+```
 
 2.  _Execute commands (aka...Profit!)_
 
